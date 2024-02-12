@@ -1,6 +1,7 @@
 package handles
 
 import (
+	"fmt"
 	"log"
 	"math/rand/v2"
 	"net/http"
@@ -19,6 +20,11 @@ func NewHandler(inertiaManager *inertia.Inertia) *Handler {
 }
 
 func (h *Handler) Home(w http.ResponseWriter, r *http.Request) {
+	if r.URL.Path != "/" {
+		fmt.Fprint(w, "404 Not found")
+		return
+	}
+
 	err := h.inertiaManager.Render(w, r, "home/Index", map[string]interface{}{
 		"random": rand.IntN(500),
 	})
