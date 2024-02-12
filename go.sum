@@ -1,0 +1,4 @@
+github.com/justinas/alice v1.2.0 h1:+MHSA/vccVCF4Uq37S42jwlkvI2Xzl7zTPCN5BnZNVo=
+github.com/justinas/alice v1.2.0/go.mod h1:fN5HRH/reO/zrUflLfTN43t3vXvKzvZIENsNEe7i7qA=
+github.com/petaki/inertia-go v1.6.0 h1:ICbSca7f6XUO96FBc+KWW/o0BjcMwfAYP2QdzIv5YWU=
+github.com/petaki/inertia-go v1.6.0/go.mod h1:vGKu9XlMj1UcHrQL65pUU6aDpkvAariQgTYwiv2a1as=

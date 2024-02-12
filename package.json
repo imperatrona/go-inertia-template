@@ -1,0 +1,28 @@
+{
+  "name": "go-inertia-template",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:frontend\" \"npm:dev:server\"",
+    "dev:frontend": "vite build --watch",
+    "dev:server": "wgo run *.go",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "@tsconfig/svelte": "^5.0.2",
+    "@types/node": "^20.11.17",
+    "concurrently": "^8.2.2",
+    "svelte": "^4.2.10",
+    "svelte-check": "^3.6.4",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.1"
+  },
+  "dependencies": {
+    "@westacks/inertia-svelte": "^1.0.20"
+  }
+}
